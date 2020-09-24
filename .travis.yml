@@ -26,7 +26,9 @@ matrix:
     - env: LISP=cmucl
 
 install:
-  - sudo apt-get install -y libcurl-dev
+  - sudo apt-get install libcurl4-openssl-dev
+  - sudo apt-get install libcurl4-nss-dev
+  - sudo apt-get install libcurl4-gnutls-dev
   - curl -L https://raw.githubusercontent.com/roswell/roswell/$ROSWELL_BRANCH/scripts/install-for-ci.sh | sh
   - ros install prove
 
