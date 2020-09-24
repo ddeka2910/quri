@@ -1,6 +1,10 @@
 language: common-lisp
 sudo: required
 
+arch:
+    - amd64
+    - ppcc64le
+
 env:
   global:
     - PATH=~/.roswell/bin:$PATH
